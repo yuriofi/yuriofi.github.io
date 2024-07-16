@@ -8,7 +8,7 @@
     <link href="/2024/07/16/W2/"/>
     <url>/2024/07/16/W2/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h1 id="第二周-7-15-7-22"><a href="#第二周-7-15-7-22" class="headerlink" title="第二周(7.15~7.22)"></a>第二周(7.15~7.22)</h1><ul><li><p>搭建个人博客</p><blockquote><p>cmd   cd hexo-blog</p><p>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</p><p>hexo s</p></blockquote></li></ul>]]></content>
     
     
     
@@ -18,10 +18,10 @@
   
   <entry>
     <title>W1</title>
-    <link href="/2024/07/16/First-Week/"/>
-    <url>/2024/07/16/First-Week/</url>
+    <link href="/2024/07/16/W1/"/>
+    <url>/2024/07/16/W1/</url>
     
-    <content type="html"><![CDATA[<h1 id="第一周（7-7-7-14）"><a href="#第一周（7-7-7-14）" class="headerlink" title="第一周（7.7~7.14）"></a>第一周（7.7~7.14）</h1><ul><li>学习markdown基本用法</li><li>安装vscode配置leetcode插件</li><li>html学习</li></ul><h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><p>&#x2F;正斜杠一般是路径  \反斜杠是字符</p><p>ctrl+&#x2F; 注释  &lt;! - -     - - &gt;</p><p>shift alt a 多行注释</p><p>ctrl+z 注销</p><p>ctrl+x删除光标所在的一行</p><p>ctrl +回车 实现换行</p><p>shift alt+⬆&#x2F;⬇复制</p><hr><h3 id="特殊规则"><a href="#特殊规则" class="headerlink" title="特殊规则"></a>特殊规则</h3><ul><li>块级元素中能写行内元素和块级元素</li><li>行内元素中能写行内元素但不能写块级元素</li><li>h1-h6不能互相嵌套 p标签中不能写块元素</li></ul><hr><h3 id="相对路径绝对路径"><a href="#相对路径绝对路径" class="headerlink" title="相对路径绝对路径"></a>相对路径绝对路径</h3><p>.&#x2F;当前位置</p><p>&#x2F;下一级</p><p>..&#x2F;上一级</p><h3 id="常见图片格式"><a href="#常见图片格式" class="headerlink" title="常见图片格式"></a>常见图片格式</h3><p>jpg格式 有损压缩格式</p><ul><li><p>tips:</p><p>支持颜色丰富，占用空间较小，<strong>不支持透明背景</strong>，不支持动态图</p><p>使用场景：对图片细节没有极高要求的场景</p></li></ul><p>png格式 无损压缩格式，能够更高质量的保存图片</p><ul><li><p>tips:</p><p>支持颜色丰富，占用空间略大，<strong>支持透明背景</strong>，不支持动态图</p><p>使用场景：让图片有透明背景更高质量呈现图片</p></li></ul><p>bmp格式 不进行压缩</p><ul><li><p>tips:</p><p>支持颜色丰富，占用空间极大</p></li></ul><p>gif格式</p><ul><li><p>tips：</p><p>仅支持256种颜色，色彩呈现不完整</p><p>支持简单透明背景，支持动态图</p></li></ul><hr><h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p>具有 href属性的a标签是超链接，具有name熟悉的a标签是锚点</p><h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格<table></h3><caption><thead><tbody><tfoot><p>行 <tr></p><p>单元格<th><td></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="第一周（7-7-7-14）"><a href="#第一周（7-7-7-14）" class="headerlink" title="第一周（7.7~7.14）"></a>第一周（7.7~7.14）</h1><ul><li>学习markdown基本用法</li><li>安装vscode配置leetcode插件</li><li>html学习</li></ul><span id="more"></span><h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><p>&#x2F;正斜杠一般是路径  \反斜杠是字符</p><p>ctrl+&#x2F; 注释  &lt;! - -     - - &gt;</p><p>shift alt a 多行注释</p><p>ctrl+z 注销</p><p>ctrl+x删除光标所在的一行</p><p>ctrl +回车 实现换行</p><p>shift alt+⬆&#x2F;⬇复制</p><hr><h3 id="特殊规则"><a href="#特殊规则" class="headerlink" title="特殊规则"></a>特殊规则</h3><ul><li>块级元素中能写行内元素和块级元素</li><li>行内元素中能写行内元素但不能写块级元素</li><li>h1-h6不能互相嵌套 p标签中不能写块元素</li></ul><hr><h3 id="相对路径绝对路径"><a href="#相对路径绝对路径" class="headerlink" title="相对路径绝对路径"></a>相对路径绝对路径</h3><p>.&#x2F;当前位置</p><p>&#x2F;下一级</p><p>..&#x2F;上一级</p><h3 id="常见图片格式"><a href="#常见图片格式" class="headerlink" title="常见图片格式"></a>常见图片格式</h3><p>jpg格式 有损压缩格式</p><ul><li><p>tips:</p><p>支持颜色丰富，占用空间较小，<strong>不支持透明背景</strong>，不支持动态图</p><p>使用场景：对图片细节没有极高要求的场景</p></li></ul><p>png格式 无损压缩格式，能够更高质量的保存图片</p><ul><li><p>tips:</p><p>支持颜色丰富，占用空间略大，<strong>支持透明背景</strong>，不支持动态图</p><p>使用场景：让图片有透明背景更高质量呈现图片</p></li></ul><p>bmp格式 不进行压缩</p><ul><li><p>tips:</p><p>支持颜色丰富，占用空间极大</p></li></ul><p>gif格式</p><ul><li><p>tips：</p><p>仅支持256种颜色，色彩呈现不完整</p><p>支持简单透明背景，支持动态图</p></li></ul><hr><h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p>具有 href属性的a标签是超链接，具有name熟悉的a标签是锚点</p><h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格<table></h3><caption><thead><tbody><tfoot><p>行 <tr></p><p>单元格<th><td></p>]]></content>
     
     
     
