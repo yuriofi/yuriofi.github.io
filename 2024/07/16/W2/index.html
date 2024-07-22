@@ -26,7 +26,7 @@
 <meta property="og:image" content="http://example.com/imgs/$%7Bfiilename%7D/6bf14b23830890148e1e03dc9553568.png">
 <meta property="og:image" content="http://example.com/imgs/$%7Bfiilename%7D/1721109554192.jpg">
 <meta property="article:published_time" content="2024-07-16T04:34:37.000Z">
-<meta property="article:modified_time" content="2024-07-19T12:48:41.330Z">
+<meta property="article:modified_time" content="2024-07-22T13:30:51.462Z">
 <meta property="article:author" content="yuriofi">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/imgs/$%7Bfiilename%7D/6bf14b23830890148e1e03dc9553568.png">
@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          910 wörter
+          2.1k wörter
         
       </span>
     
@@ -233,7 +233,7 @@
         
         
         
-          8 minuten
+          18 minuten
         
       </span>
     
@@ -353,24 +353,174 @@
 
 
 
+<h3 id="螺旋矩阵-59"><a href="#螺旋矩阵-59" class="headerlink" title="螺旋矩阵(59)"></a>螺旋矩阵(59)</h3><p>0 1 2 </p>
+<p>7 8 3</p>
+<p>6 5 4</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span>[][] generateMatrix(<span class="hljs-type">int</span> n) &#123;<br>        <span class="hljs-type">int</span> count=<span class="hljs-number">1</span>;<br>        <span class="hljs-type">int</span> left=<span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> right=n-<span class="hljs-number">1</span>;<br>        <span class="hljs-type">int</span> up=<span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> down=n-<span class="hljs-number">1</span>;<br>        <span class="hljs-type">int</span>[][] nums=<span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[n][n];<br>        <span class="hljs-keyword">while</span>(count&lt;=n*n)&#123;<br>           <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=left;i&lt;=right;i++)&#123;<br>            nums[up][i]=count++;<br>           &#125;<br>           up++;<br>           <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=up;i&lt;=down;i++)&#123;<br>            nums[i][right]=count++;<br>           &#125;<br>           right--;<br>           <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=right;i&gt;=left;i--)&#123;<br>            nums[down][i]=count++;<br>           &#125;<br>           down--;<br>           <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=down;i&gt;=up;i--)&#123;<br>            nums[i][left]=count++;<br>           &#125;<br>           left++;<br>        &#125;<br>        <span class="hljs-keyword">return</span> nums;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 
-<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><blockquote>
+
+<h2 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h2><h3 id="单链表"><a href="#单链表" class="headerlink" title="单链表"></a>单链表</h3><h4 id="移除链表元素-203"><a href="#移除链表元素-203" class="headerlink" title="移除链表元素(203)"></a>移除链表元素(203)</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> ListNode <span class="hljs-title function_">removeElements</span><span class="hljs-params">(ListNode head, <span class="hljs-type">int</span> val)</span> &#123;<br>    <span class="hljs-keyword">if</span> (head == <span class="hljs-literal">null</span>) &#123;<br>        <span class="hljs-keyword">return</span> head;<br>    &#125;<br>    <span class="hljs-comment">// 创建一个虚拟节点(dummy node)，用于处理可能涉及头节点的情况</span><br>    <span class="hljs-type">ListNode</span> <span class="hljs-variable">dummy</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ListNode</span>(-<span class="hljs-number">1</span>, head);<br>    <span class="hljs-type">ListNode</span> <span class="hljs-variable">pre</span> <span class="hljs-operator">=</span> dummy;  <span class="hljs-comment">// pre 指针始终指向当前节点的前一个节点</span><br>    <span class="hljs-type">ListNode</span> <span class="hljs-variable">cur</span> <span class="hljs-operator">=</span> head;   <span class="hljs-comment">// cur 指针从头节点开始遍历整个链表</span><br>    <span class="hljs-keyword">while</span> (cur != <span class="hljs-literal">null</span>) &#123;<br>        <span class="hljs-keyword">if</span> (cur.val == val) &#123;<br>            <span class="hljs-comment">// 如果当前节点的值等于 val，则跳过当前节点</span><br>            pre.next = cur.next;<br>        &#125; <span class="hljs-keyword">else</span> &#123;<br>            <span class="hljs-comment">// 否则，将 pre 指针移动到当前节点，表示当前节点是有效节点</span><br>            pre = cur;<br>        &#125;<br>        <span class="hljs-comment">// 将 cur 指针向前移动到下一个节点</span><br>        cur = cur.next;<br>    &#125;<br>    <span class="hljs-comment">// 返回从虚拟节点的下一个节点开始的链表，即删除了所有值为 val 的节点后的结果链表</span><br>    <span class="hljs-keyword">return</span> dummy.next;<br>&#125;<br><br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="双链表"><a href="#双链表" class="headerlink" title="双链表"></a>双链表</h3><h3 id="循环链表"><a href="#循环链表" class="headerlink" title="循环链表"></a>循环链表</h3><h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><blockquote>
 <p>外部样式用<code>link</code></p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs HTM">&lt;head&gt;<br>&lt;link rel=&quot;stylesheet&quot; href=&quot;./exteriorstyle.css&quot;&gt;<br>&lt;/head&gt;<br></code></pre></td></tr></table></figure>
 
-<h3 id="元素选择器"><a href="#元素选择器" class="headerlink" title="元素选择器"></a>元素选择器</h3><blockquote>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">h1</span>&#123;<br>    <span class="hljs-attribute">color</span>: aquamarine;<br>    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">70px</span>;<br>&#125;<br><br><span class="hljs-selector-tag">p</span>&#123;<br>    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">64</span>, <span class="hljs-number">138</span>, <span class="hljs-number">203</span>);<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h3><p><em><strong>选择器优先级</strong></em></p>
+<p>id选择器&gt;类选择器&gt;元素选择器&gt;通配选择器</p>
+<p>作用域越小优先级越大</p>
+<p>行内样式权重大于所有选择器</p>
+<p><code>!important</code>的权重大于行内样式大于所有选择器</p>
+<blockquote>
+<p> 元素选择器：</p>
+<p>h1{<br> color: aquamarine;<br> font-size: 70px;<br>}</p>
+</blockquote>
+<blockquote>
+<p>通配选择器：</p>
+<p><code>*&#123;</code></p>
+<p>&#96;&#96;}&#96;</p>
+</blockquote>
+<blockquote>
+<p> 类选择器:</p>
+<p>.类名 {</p>
+<p>}</p>
+</blockquote>
+<blockquote>
+<p>id选择器:</p>
+<p>#id值{</p>
+<p>}</p>
+</blockquote>
+<blockquote>
+<p>p.class#id{</p>
+<p>}</p>
+</blockquote>
+<blockquote>
+<p>.class1,</p>
+<p>.class2,</p>
+<p>#id{</p>
+<p>}</p>
+</blockquote>
+<blockquote>
+<p>选择器&gt;选择器&gt;选择器&gt;……选择器n{}</p>
+</blockquote>
+<blockquote>
+<p>选择器1+选择器2 {</p>
+<p>}表示选择器1后紧紧相邻的兄弟元素</p>
+</blockquote>
+<blockquote>
+<p>选择器1~选择器2{</p>
+<p>}表示选择器1后的所有兄弟元素</p>
+</blockquote>
+<blockquote>
+<p>[title^&#x3D;”a”]{</p>
+<p>}选中具有title属性，且属性值以a开头</p>
+</blockquote>
+<blockquote>
+<p>[title$&#x3D;”u”]{<br>}选中具有title属性，且属性值以u结尾</p>
+<p>[title*&#x3D;”u”]{<br>}选中具有title属性，且属性值包含u</p>
+</blockquote>
+<h3 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h3><ul>
+<li>动态伪类</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-comment">/* 选中的是没有访问过的a元素 */</span><br>       <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:link</span> &#123;<br>           <span class="hljs-attribute">color</span>:aquamarine;<br>       &#125;<br>       <span class="hljs-comment">/* 选中的是访问过的a元素 */</span><br>       <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:visited</span> &#123;<br>           <span class="hljs-attribute">color</span>:black;<br>       &#125;<br>       <span class="hljs-comment">/* 选中的是鼠标悬停状态的a元素 */</span><br>       <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> &#123;<br>           <span class="hljs-attribute">color</span>: blue;<br>       &#125;<br>       <span class="hljs-comment">/* 选中的是激活状态的a元素 */</span><br>       <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:active</span> &#123;<br>           <span class="hljs-attribute">color</span>: blueviolet;<br>       &#125;<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>hover和active是通用，link和visited是a标签特有的</p>
+</blockquote>
+<ul>
+<li><p>结构伪类</p>
+<p><code>:nth-last-child(n)</code>所有兄弟元素中的倒数第n个</p>
+<p><code>:nth-last-of-type(n)</code>所有同类型兄弟元素中的倒数第n个</p>
+<p><code>:only-child</code>选中没有兄弟的元素(独生子女)</p>
+<p><code>:only-of-type</code>选中没有同类型兄弟的元素</p>
+<p><code>:root</code>根元素</p>
+<p><code>:empty</code>元素为空元素</p>
+<blockquote>
+<p>选中的是div的第一个儿子元素p</p>
+<p>div&gt;p:first-child{}&#x2F;div&gt;p:last-child{}</p>
+</blockquote>
+<blockquote>
+<p>选中的是 div 的后代p,且p的父级是谁无所谓，但p必须是其父代的第一个儿子</p>
+<p>div p:first-child{}</p>
+</blockquote>
+<blockquote>
+<p>选中的是div的第n个儿子p元素(第n个是按照所有兄弟计算的)</p>
+<p>div&gt;p:nth-child(n){}</p>
+<p>tips:关于n值：-n+3表示选中前三个</p>
+<p>div&gt;p:nth-last-child(n){}倒数第n个</p>
+</blockquote>
+<blockquote>
+<p>选中的是div的第n个儿子p元素(第n个是按照同类型(在这里也就是按p)兄弟计算的)</p>
+<p>div&gt;p:first-of-type{}&#x2F;div&gt;p:last-of-type{}</p>
+<p>div&gt;p:nth-of-type(n){}</p>
+<p>div&gt;p:nth-last-of-type(n){}</p>
+</blockquote>
+<blockquote>
+<p>span:only-child{}选中的是没有兄弟的span</p>
+<p>span:only-of-type{}选中的是没有同类型兄弟的span</p>
+</blockquote>
+<blockquote>
+<p>：root {</p>
+<p>background-color:red;</p>
+<p>}  选中整个html进行相当于html{}</p>
+</blockquote>
+<blockquote>
+<p>选中的是没有内容的div</p>
+<p>div:empty {</p>
+<p>​	width:100px;</p>
+<p>​	height:100px;</p>
+<p>}</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
 
 </blockquote>
-<h3 id="通配选择器"><a href="#通配选择器" class="headerlink" title="通配选择器"></a>通配选择器</h3><p><code>*&#123;</code></p>
-<p><code>&#125;</code></p>
-<h3 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h3><p>.类名 {</p>
-<p>}</p>
-<h3 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h3><p>#id值{</p>
-<p>}</p>
+</li>
+<li><p>否定伪类</p>
+</li>
+</ul>
+<p><code>:not(选择器)</code>排除满足括号中条件的元素</p>
+<ul>
+<li>UI伪类</li>
+</ul>
+<p><code>input:checked &#123;&#125;</code>选中的是勾选的复选框</p>
+<p><code>input:disabled &#123;&#125;</code>选中的是被禁用的</p>
+<p><code>input:enabled &#123;&#125;</code>选中的是可用的input元素</p>
+<ul>
+<li>目标伪类</li>
+</ul>
+<p><code>:target</code>选中锚点所指向的元素</p>
+<ul>
+<li>语言伪类</li>
+</ul>
+<p><code>:lang=() &#123;&#125;</code></p>
+<h3 id="伪元素选择器"><a href="#伪元素选择器" class="headerlink" title="伪元素选择器"></a>伪元素选择器</h3><blockquote>
+<p>伪元素是元素中的一些特殊位置</p>
+</blockquote>
+<p><code>::first-letter&#123;&#125;</code>选中的是元素中的第一个字母</p>
+<p><code>::first-line&#123;&#125;</code>选中元素中的第一行文字</p>
+<p><code>::selection&#123;&#125;</code>选中的是元素中被鼠标选择的文字</p>
+<p><code>input::placeholder&#123;&#125;选中的是input输入框的中的提示文字</code></p>
+<p><code>::before&#123;&#125;</code>在元素最开始的位置创建一个子元素(必须用<code>content</code>属性指定内容)</p>
+<p><code>::after&#123;&#125;</code>在元素最后的位置创建一个子元素(必须用<code>content</code>属性指定内容)</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">::before</span>&#123;<br><span class="hljs-attribute">content</span>:<span class="hljs-string">&quot;￥&quot;</span><br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>100<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
 
                 
               </div>
