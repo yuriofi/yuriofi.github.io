@@ -16,17 +16,25 @@
   <meta name="author" content="yuriofi">
   <meta name="keywords" content="">
   
-    <meta name="description" content="yuriofi�ĸ��˲���">
+    <meta name="description" content="第三周(7.22~7.28) CSS三大特性 层叠性  继承性  优先级    颜色 color:rgb(0,0,0) color:rgba(0,0,0,0)a代表透明度0~1 0代表全透明   color:#??????用十六进制表示红绿蓝 HEX color:#????????多两位也是代表透明度 HEXA 每一位的取值范围是(0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="W3">
 <meta property="og:url" content="http://example.com/2024/07/16/W3/index.html">
 <meta property="og:site_name" content="yuriofi">
-<meta property="og:description" content="yuriofi�ĸ��˲���">
+<meta property="og:description" content="第三周(7.22~7.28) CSS三大特性 层叠性  继承性  优先级    颜色 color:rgb(0,0,0) color:rgba(0,0,0,0)a代表透明度0~1 0代表全透明   color:#??????用十六进制表示红绿蓝 HEX color:#????????多两位也是代表透明度 HEXA 每一位的取值范围是(0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f)">
 <meta property="og:locale">
+<meta property="og:image" content="http://example.com/imgs/$%7Bfiilename%7D/image-20240726172904725.png">
+<meta property="og:image" content="http://example.com/imgs/$%7Bfiilename%7D/image-20240729185930593.png">
+<meta property="og:image" content="http://example.com/imgs/$%7Bfiilename%7D/image-20240730143033096.png">
+<meta property="og:image" content="http://example.com/imgs/$%7Bfiilename%7D/image-20240730144037284.png">
+<meta property="og:image" content="http://example.com/imgs/$%7Bfiilename%7D/image-20240730155325198.png">
+<meta property="og:image" content="http://example.com/imgs/$%7Bfiilename%7D/image-20240801123422781.png">
+<meta property="og:image" content="http://example.com/imgs/$%7Bfiilename%7D/image-20240801135333505.png">
 <meta property="article:published_time" content="2024-07-16T05:20:51.000Z">
-<meta property="article:modified_time" content="2024-07-16T05:24:30.960Z">
+<meta property="article:modified_time" content="2024-08-02T07:02:41.437Z">
 <meta property="article:author" content="yuriofi">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/imgs/$%7Bfiilename%7D/image-20240726172904725.png">
   
   
   
@@ -219,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 wörter
+          1.9k wörter
         
       </span>
     
@@ -230,7 +238,7 @@
         
         
         
-          1 minuten
+          16 minuten
         
       </span>
     
@@ -272,7 +280,252 @@
             
               <div class="markdown-body">
                 
-                
+                <h1 id="第三周-7-22-7-28"><a href="#第三周-7-22-7-28" class="headerlink" title="第三周(7.22~7.28)"></a>第三周(7.22~7.28)</h1><hr>
+<h2 id="CSS三大特性"><a href="#CSS三大特性" class="headerlink" title="CSS三大特性"></a>CSS三大特性</h2><ul>
+<li><p>层叠性</p>
+</li>
+<li><p>继承性</p>
+</li>
+<li><p>优先级</p>
+</li>
+</ul>
+<hr>
+<h2 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a><strong>颜色</strong></h2><blockquote>
+<p><code>color:rgb(0,0,0)</code></p>
+<p><code>color:rgba(0,0,0,0)</code>a代表透明度0~1 0代表全透明</p>
+</blockquote>
+<blockquote>
+<p><code>color:#??????</code>用十六进制表示红绿蓝 HEX</p>
+<p><code>color:#????????</code>多两位也是代表透明度 HEXA</p>
+<p>每一位的取值范围是(0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f)</p>
+<p><code>color:hsl(色相，饱和度，透明度)</code></p>
+</blockquote>
+<p>qq截图可以取色</p>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a><strong>字体</strong></h2><p><code>font-family:&quot;微软雅黑&quot;,&quot;华文琥珀&quot;,&quot;华文彩云&quot;,sans-serif</code>；sans-serif非衬线</p>
+<p><code>font-style:normal</code></p>
+<p><code>font-style:italic</code>斜体</p>
+<p><code>font-style:oblique斜体</code></p>
+<p><code>font-weight:bold;</code></p>
+<p><strong>复合属性</strong></p>
+<p><code>font:bold litalic 100px &quot;微软雅黑&quot;</code>最后两个必须是大小、字体，各个属性用空格分开</p>
+<p><strong>文本间距</strong></p>
+<p><code>letter-spacing:</code>字母间距</p>
+<p><code>word-spacing:</code>单词间距</p>
+<p><code>text-decoration:overline/underline/line-through</code></p>
+<blockquote>
+<p>这些线可以再增加属性添加颜色，wavy波浪线 dotted虚线</p>
+<p>text-decoration:overline dotted red</p>
+</blockquote>
+<p><code>text-decoration:none</code>(消除本身自带的下划线，例如超链接的)</p>
+<p><strong>文本缩进</strong></p>
+<p><code>text-indent</code></p>
+<blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">div</span>&#123;<br>    <span class="hljs-attribute">font-size</span>:<span class="hljs-number">40px</span>;<br>    <span class="hljs-attribute">text-indent</span>:<span class="hljs-number">80px</span>;<span class="hljs-comment">/*首行空两格*/</span><br>&#125;<br></code></pre></td></tr></table></figure>
+</blockquote>
+<p><strong>文本对齐</strong></p>
+<p><code>text-align:left/center/right</code></p>
+<p><strong>行高</strong></p>
+<p><code>line-height:数值</code>默认font-size的数值倍</p>
+<p><code>vertical-align</code>不能控制块级元素，操作行内元素，也可用于单元格</p>
+<h2 id="列表相关属性"><a href="#列表相关属性" class="headerlink" title="列表相关属性"></a><strong>列表相关属性</strong></h2><p><code>list-style-type:none/square/decimal/</code>列表符号</p>
+<p><code>list-style-position:inside/outside</code>列表符号的位置</p>
+<p><code>list-style-image:url(图片地址)</code>自定义列表符号</p>
+<p>复合属性<code>list-style:</code></p>
+<h2 id="边框相关属性"><a href="#边框相关属性" class="headerlink" title="边框相关属性"></a>边框相关属性</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-comment">/*border-width:2px</span><br><span class="hljs-comment">  border-color:green</span><br><span class="hljs-comment">  border-style:solid</span><br><span class="hljs-comment">*/</span><br><span class="hljs-selector-tag">table</span> &#123;<br>    <span class="hljs-attribute">border</span>:<span class="hljs-number">2px</span> green solid;<br>&#125;<br><span class="hljs-selector-tag">td</span>,<span class="hljs-selector-tag">th</span> &#123;<br>   <span class="hljs-attribute">border</span>:<span class="hljs-number">2px</span> orange dotted; <br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>不仅表格能用其他元素可以应用</p>
+<h2 id="表格独有属性"><a href="#表格独有属性" class="headerlink" title="表格独有属性"></a>表格独有属性</h2><p><code>table-layout:fixed;</code>控制表格的列宽</p>
+<p><code>border-spacing:</code>控制单元格间距</p>
+<p><code>border-collapse:seperate合并相邻单元格的边框</code></p>
+<p><code>empty-cells:show/hide  </code>隐藏没有内容的单元格</p>
+<p><code>caption-side：top/bottom</code>设置表格标题位置</p>
+<h2 id="背景相关属性"><a href="#背景相关属性" class="headerlink" title="背景相关属性"></a>背景相关属性</h2><p><code>background-image</code> </p>
+<p><code>background-repeat:repeat/no-repeat/repeat-x/repeat-y</code>设置背景重复方式</p>
+<p><code>background-position:</code>水平：left center right   垂直：top center bottom</p>
+<p>复合属性：<code>background</code></p>
+<h2 id="鼠标相关属性"><a href="#鼠标相关属性" class="headerlink" title="鼠标相关属性"></a>鼠标相关属性</h2><p><code>cursor:pointer/help/wait</code>修改光标的样式</p>
+<p><code>cursor:url()，pointer</code> 自定义鼠标图标</p>
+<h2 id="长度单位"><a href="#长度单位" class="headerlink" title="长度单位"></a>长度单位</h2><p><code>em</code>相对于当前元素的font-size的倍数</p>
+<p><code>rem</code>相对于根元素的font-size的倍数</p>
+<p><code>%</code>相对于其父元素的百分比</p>
+<hr>
+<h2 id="元素的显示模式"><a href="#元素的显示模式" class="headerlink" title="元素的显示模式"></a>元素的显示模式</h2><ul>
+<li><p>块元素</p>
+<blockquote>
+<p>在页面中独占一行，默认宽度撑满父元素，默认高度由内容撑开，可通过CSS设置宽高</p>
+</blockquote>
+</li>
+<li><p>行内元素(span)</p>
+<blockquote>
+<p>不独占一行，默认宽度高度都由内容撑开，无法通过CSS设置宽高</p>
+</blockquote>
+</li>
+<li><p>行内块元素(img)</p>
+<blockquote>
+<p>不独占一行，默认宽度高度都由内容撑开，可通过CSS设置宽高</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="/./imgs/$%7Bfiilename%7D/image-20240726172904725.png" srcset="/img/loading.gif" lazyload alt="image-20240726172904725"></p>
+<h3 id="修改元素的显示模式"><a href="#修改元素的显示模式" class="headerlink" title="修改元素的显示模式"></a>修改元素的显示模式</h3><p>display：block&#x2F;inline-block&#x2F;inline&#x2F;none</p>
+<h3 id="隐藏元素的两种方法"><a href="#隐藏元素的两种方法" class="headerlink" title="隐藏元素的两种方法"></a>隐藏元素的两种方法</h3><p><code>visibility:show/hidden</code>隐藏会占有原来的位置</p>
+<p><code>display:none</code>彻底隐藏</p>
+<hr>
+<h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><h3 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h3><p><code>css</code>会把<code>html</code>元素都堪称一个盒子 </p>
+<p>margin外边距 border边框 padding内边距 content内容</p>
+<p><img src="/./imgs/$%7Bfiilename%7D/image-20240729185930593.png" srcset="/img/loading.gif" lazyload alt="image-20240729185930593"></p>
+<ul>
+<li>margin塌陷问题</li>
+<li><img src="/./imgs/$%7Bfiilename%7D/image-20240730143033096.png" srcset="/img/loading.gif" lazyload alt="image-20240730143033096"></li>
+</ul>
+<p><img src="/./imgs/$%7Bfiilename%7D/image-20240730144037284.png" srcset="/img/loading.gif" lazyload alt="image-20240730144037284"></p>
+<hr>
+<h3 id="样式的继承"><a href="#样式的继承" class="headerlink" title="样式的继承"></a>样式的继承</h3><p>可继承：字体属性文本属性文字颜色</p>
+<p>不可继承：边框背景内边距外边距宽高溢出方式</p>
+<blockquote>
+<p>能继承的属性都是不影响布局，和盒子模型没关系的</p>
+</blockquote>
+<p><img src="/./imgs/$%7Bfiilename%7D/image-20240730155325198.png" srcset="/img/loading.gif" lazyload alt="image-20240730155325198"></p>
+<hr>
+<h3 id="空白问题"><a href="#空白问题" class="headerlink" title="空白问题"></a>空白问题</h3><p>解决行内块的幽灵空白问题</p>
+<p>法一：让div的 font-size&#x3D;0</p>
+<p>法二：img 设置vertical-align:或者display:block</p>
+<p><img src="/./imgs/$%7Bfiilename%7D/image-20240801123422781.png" srcset="/img/loading.gif" lazyload alt="image-20240801123422781"></p>
+<hr>
+<h2 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h2><p>早期：文字环绕图片</p>
+<p>后期：布局</p>
+<p><code>img&#123;</code></p>
+<p><code>float:left</code></p>
+<p><code>&#125;</code></p>
+<p>元素浮动后的特点：</p>
+<ol>
+<li>脱离文档流</li>
+<li>不管浮动前是什么元素，浮动后默认宽与高都是被内容撑开，可以设置宽高</li>
+<li>不会独占一行，可与其他元素共用一行</li>
+<li>不会margin合并也不会margin塌陷，能够完美设置四个方向的margin和padding</li>
+<li>不会像行内块一样被当作文本处理</li>
+</ol>
+<p>浮动后的影响：</p>
+<ol>
+<li>浮动元素对后面的元素有影响对前面的元素无影响</li>
+<li>对兄弟元素：后面的兄弟元素会占据浮动元素之前的位置，在浮动元素的下面，对前面的兄弟无影响</li>
+<li>对父元素的影响：不能撑起父元素的高度，导致父元素高度塌陷，但父元素的宽度依然束缚浮动的元素</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-class">.outer</span><span class="hljs-selector-pseudo">::after</span>&#123;<br>    <span class="hljs-attribute">content</span>:<span class="hljs-string">&quot;&quot;</span>;<br>    <span class="hljs-attribute">display</span>:block;<br>    <span class="hljs-attribute">clear</span>:both;<span class="hljs-comment">/*消除浮动的影响*/</span><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><img src="/./imgs/$%7Bfiilename%7D/image-20240801135333505.png" srcset="/img/loading.gif" lazyload alt="image-20240801135333505"></p>
+<hr>
+<h2 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h2><h3 id="相对定位"><a href="#相对定位" class="headerlink" title="相对定位"></a>相对定位</h3><p>开启定位：<code>position:relative;</code></p>
+<p>使用left bottom top right 四个属性调整位置</p>
+<p>相对定位的参考点是相对自己原来的位置</p>
+<p>相对定位特点：</p>
+<ol>
+<li><p>不会脱离文档流，元素位置变化是视觉效果上的变化不会对元素产生任何影响</p>
+</li>
+<li><p>定位元素的显示层级比普通元素高，无论什么定位显示层级都是一样的</p>
+<p>默认规则：</p>
+<ul>
+<li>定位的元素都会盖在普通元素之上</li>
+<li>都发生定位的两个元素，后写的元素会盖在先写的元素之上</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>绝大多数情况下相对定位会与绝对定位配合使用</p>
+</blockquote>
+<h3 id="绝对定位"><a href="#绝对定位" class="headerlink" title="绝对定位"></a>绝对定位</h3><p><code>position:absolute</code></p>
+<blockquote>
+<p>子绝父相</p>
+<p>子元素开启绝对定位再让父元素开启相对定位，子元素的定位参考点就是父元素</p>
+</blockquote>
+<h3 id="固定定位"><a href="#固定定位" class="headerlink" title="固定定位"></a>固定定位</h3><p><code>position:fixed</code></p>
+<p>参考点是视口，比如固定在左上角，无论你上下滑动始终在视口的左上角</p>
+<blockquote>
+<p>小广告的应用</p>
+</blockquote>
+<h3 id="粘性定位"><a href="#粘性定位" class="headerlink" title="粘性定位"></a>粘性定位</h3><p><code>position:sticky;</code></p>
+<p>参考点：离他最近的一个拥有滚动条的祖先元素</p>
+<ul>
+<li>不会脱离文档流，是一种专门用于窗口滚动的新的定位方式</li>
+<li>最常见的值是top值</li>
+</ul>
+<blockquote>
+<p>粘性定位和相对定位的特点基本一致但不同的是粘性定位可以在元素到达某个位置时将其固定</p>
+</blockquote>
+<h3 id="定位层级"><a href="#定位层级" class="headerlink" title="定位层级"></a>定位层级</h3><ul>
+<li>定位层级比普通元素高</li>
+<li><code>z-index</code>的属性值时数字，没有单位，值越大显示层级越高</li>
+<li>只有定位的元素设置<code>z-index</code>才有效</li>
+</ul>
+<h3 id="定位的特殊应用"><a href="#定位的特殊应用" class="headerlink" title="定位的特殊应用"></a>定位的特殊应用</h3><blockquote>
+<ol>
+<li>发生固定定位、绝对定位后，元素都变成了定位元素，默认宽高被内容撑开，且仍然可以设置宽高</li>
+<li>发生相对定位后元素依然是之前的显示模式</li>
+<li>以下的特殊应用只针对绝对定位和固定定位的元素，不包括相对定位的元素</li>
+</ol>
+</blockquote>
+<h4 id="让定位元素的宽充满包含块"><a href="#让定位元素的宽充满包含块" class="headerlink" title="让定位元素的宽充满包含块"></a>让定位元素的宽充满包含块</h4><ol>
+<li>块宽与包含块保持一致可以给定位元素同时设置<code>left</code> <code>right</code>为0</li>
+<li>高度与包含块保持一致可以给定位元素同时设置<code>top</code> <code>bottom</code>为0</li>
+</ol>
+<h4 id="让定位元素在包含块中居中"><a href="#让定位元素在包含块中居中" class="headerlink" title="让定位元素在包含块中居中"></a>让定位元素在包含块中居中</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-attribute">left</span>：<span class="hljs-number">0</span>;<br><span class="hljs-attribute">right</span>：<span class="hljs-number">0</span>;<br><span class="hljs-attribute">top</span>:<span class="hljs-number">0</span>;<br><span class="hljs-attribute">bottom</span>:<span class="hljs-number">0</span>;<br><span class="hljs-attribute">margin</span>:auto;<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>该定位元素必须设置宽高</p>
+</blockquote>
+<hr>
+<h2 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h2><h3 id="版心"><a href="#版心" class="headerlink" title="版心"></a>版心</h3><ul>
+<li>在pc端网页中一般会有一个固定宽度且水平居中的盒子来显示网页的主要内容这是网页的版心</li>
+<li>版心的宽度一般是960-1200px</li>
+<li>可以是一个也可以多个</li>
+</ul>
+<h3 id="常用布局名词"><a href="#常用布局名词" class="headerlink" title="常用布局名词"></a>常用布局名词</h3><table>
+<thead>
+<tr>
+<th>位置</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>顶部导航条</td>
+<td><code>topbar</code></td>
+</tr>
+<tr>
+<td>页头</td>
+<td><code>header``page-header</code></td>
+</tr>
+<tr>
+<td>导航</td>
+<td><code>nav</code> <code>navigator</code> <code>navbar</code></td>
+</tr>
+<tr>
+<td>搜索框</td>
+<td><code>search</code> <code>search-box</code></td>
+</tr>
+<tr>
+<td>横幅、广告、宣传图</td>
+<td><code>banner</code></td>
+</tr>
+<tr>
+<td>主要内容</td>
+<td><code>content</code> <code>main</code></td>
+</tr>
+<tr>
+<td>侧边栏</td>
+<td><code>aside</code> <code>sidebar</code></td>
+</tr>
+<tr>
+<td>页脚</td>
+<td><code>footer</code> <code>page-footer</code></td>
+</tr>
+</tbody></table>
+<h3 id="重置默认样式"><a href="#重置默认样式" class="headerlink" title="重置默认样式"></a>重置默认样式</h3><h4 id="方案一：使用全局选择器"><a href="#方案一：使用全局选择器" class="headerlink" title="方案一：使用全局选择器"></a>方案一：使用全局选择器</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs css">* &#123;<br>    <span class="hljs-attribute">margin</span>:<span class="hljs-number">0</span>;<br>    <span class="hljs-attribute">padding</span>:<span class="hljs-number">0</span>;  <br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+<h4 id="方案二：reset-css"><a href="#方案二：reset-css" class="headerlink" title="方案二：reset.css"></a>方案二：reset.css</h4><p>选择具有默认样式的元素，清空其默认的样式，经过reset后的网页，就像一张白纸，开发人员可根据设计稿，静思的去添加具体的样式</p>
+<h4 id="方案三：Normalize-css"><a href="#方案三：Normalize-css" class="headerlink" title="方案三：Normalize.css"></a>方案三：Normalize.css</h4><p>在清楚默认样式的基础上保留一些有价值的默认样式</p>
+
                 
               </div>
             
@@ -333,6 +586,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2024/08/02/W4/" title="W4">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">W4</span>
+                        <span class="visible-mobile">Vorheriger</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
