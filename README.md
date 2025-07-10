@@ -1,12 +1,12 @@
 # Hi there, I'm yuriofi 👋
 
-🎓 大三计算机科学与技术专业学生 | 🌱 正在学习前端
+🎓 大二计算机科学与技术专业学生 | 🌱 正在学习前端
 
 ---
 
 ## 关于我
 
-- 🎓 目前是一名大三学生，热爱编程与技术探索
+- 🎓 目前是一名大二学生，热爱编程与技术探索
 - 💻 熟悉 C、Java
 - 🚀 正在学习 JavaScript，逐步深入前端世界
 - 📝 个人博客：[https://yuriofi.github.io/](https://yuriofi.github.io/)
